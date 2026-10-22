@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIỀU LAN BEAUTY - Rate Card & Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#FAF4EB',
+                            pink: '#E88B9A',
+                            darkPink: '#9E3B53',
+                            accent: '#F3C5C3',
+                            gold: '#D4AF37',
+                            cardBg: '#FFFDF9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .bg-soft-gradient {
+            background: linear-gradient(135deg, #FDE8EA 0%, #FAF4EB 50%, #FCF0DB 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 253, 249, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(232, 139, 154, 0.2);
+        }
+        /* Hide scrollbar for clean horizontal look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-soft-gradient text-gray-800 font-sans min-h-screen relative antialiased selection:bg-brand-pink selection:text-white">
+
+    <!-- FLOATING SIDEBAR MENU (Cột công cụ bên phải giống ảnh) -->
+    <aside class="fixed right-3 md:right-6 top-1/2 -translate-y-1/2 z-50 glass-panel rounded-full py-4 px-2 shadow-xl flex flex-col items-center space-y-4 text-brand-darkPink">
+        <a href="#about" title="Về tôi" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-pink hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-user text-lg"></i>
+        </a>
+        <a href="#stats" title="Thống kê kênh" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-pink hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-chart-line text-lg"></i>
+        </a>
+        <a href="#ratecard" title="Bảng giá dịch vụ" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-pink hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-tag text-lg"></i>
+        </a>
+        <a href="#portfolio" title="Dự án nổi bật" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-pink hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-images text-lg"></i>
+        </a>
+        <a href="#contact" title="Liên hệ" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-brand-pink hover:text-white transition-all duration-300">
+            <i class="fa-solid fa-envelope text-lg"></i>
+        </a>
+    </aside>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 pr-14 md:pr-24">
+
+        <!-- HEADER / ABOUT SECTION -->
+        <section id="about" class="min-h-[80vh] flex flex-col md:flex-row items-center justify-between gap-10 py-10">
+            <!-- Left Info -->
+            <div class="w-full md:w-7/12 space-y-6">
+                <div class="inline-block bg-white/70 backdrop-blur border border-brand-pink/30 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-brand-darkPink uppercase">
+                    Beauty Content Creator | Skincare Reviewer
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-brand-darkPink leading-tight uppercase tracking-tight">
+                    KIỀU LAN BEAUTY
+                </h1>
+                <div class="text-gray-700 text-base sm:text-lg leading-relaxed space-y-4">
+                    <p>
+                        Kiều Lan Beauty là sáng tạo nội dung trong lĩnh vực làm đẹp với hơn <strong class="text-brand-darkPink">8 năm kinh nghiệm dùng mỹ phẩm</strong> và <strong class="text-brand-darkPink">5 năm sáng tạo nội dung</strong> chuyên sâu về Skincare & Makeup.
+                    </p>
+                    <p class="text-sm sm:text-base text-gray-600">
+                        Kênh tập trung mang đến những đánh giá chân thực, khoa học và thẩm mỹ cao cho các dòng sản phẩm từ bình dân đến cao cấp, giúp người xem tìm thấy chu trình chăm sóc da tối ưu nhất.
+                    </p>
+                </div>
+
+                <!-- Focus Pillars -->
+                <div class="pt-2">
+                    <h3 class="text-xs font-bold text-brand-darkPink uppercase tracking-widest mb-3">Nội dung kênh tập trung vào:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white/80 border border-brand-pink/20 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-700 shadow-sm">✨ Skincare Routine</span>
+                        <span class="bg-white/80 border border-brand-pink/20 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-700 shadow-sm">💄 Soft Glam Makeup</span>
+                        <span class="bg-white/80 border border-brand-pink/20 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-700 shadow-sm">🧪 Chuyên sâu Thành phần</span>
+                        <span class="bg-white/80 border border-brand-pink/20 px-3 py-1.5 rounded-lg text-xs font-medium text-gray-700 shadow-sm">📦 Unboxing & Swatch</span>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#ratecard" class="bg-brand-darkPink hover:bg-brand-pink text-white font-medium px-6 py-3 rounded-xl shadow-lg transition-all duration-300 flex items-center gap-2">
+                        <span>Xem Bảng Giá</span>
+                        <i class="fa-solid fa-arrow-down text-sm"></i>
+                    </a>
+                    <a href="#contact" class="bg-white hover:bg-brand-accent/20 border border-brand-pink/40 text-brand-darkPink font-medium px-6 py-3 rounded-xl shadow transition-all duration-300">
+                        Hợp Tác Ngay
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Hero Image -->
+            <div class="w-full md:w-5/12 flex justify-center">
+                <div class="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/60">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" 
+                         alt="Kiều Lan Beauty" 
+                         class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-white p-4 rounded-2xl glass-panel text-gray-900">
+                        <p class="font-serif font-bold text-lg text-brand-darkPink">Kiều Lan</p>
+                        <p class="text-xs text-gray-600">@kieulan.beauty • Beauty & Lifestyle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS SECTION -->
+        <section id="stats" class="py-12 border-t border-brand-pink/20">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-brand-darkPink">Thống Kê Kênh Social</h2>
+                <p class="text-sm text-gray-600 mt-1">Cập nhật chỉ số tương tác thực tế</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <!-- Stat Card 1 -->
+                <div class="glass-panel p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition">
+                    <i class="fa-brands fa-tiktok text-3xl text-black mb-2"></i>
+                    <div class="text-2xl sm:text-3xl font-bold text-brand-darkPink">250K+</div>
+                    <div class="text-xs text-gray-500 font-medium mt-1">Followers TikTok</div>
+                </div>
+                <!-- Stat Card 2 -->
+                <div class="glass-panel p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition">
+                    <i class="fa-brands fa-instagram text-3xl text-pink-600 mb-2"></i>
+                    <div class="text-2xl sm:text-3xl font-bold text-brand-darkPink">85K+</div>
+                    <div class="text-xs text-gray-500 font-medium mt-1">Followers Instagram</div>
+                </div>
+                <!-- Stat Card 3 -->
+                <div class="glass-panel p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition">
+                    <i class="fa-solid fa-heart text-3xl text-red-500 mb-2"></i>
+                    <div class="text-2xl sm:text-3xl font-bold text-brand-darkPink">4.8M</div>
+                    <div class="text-xs text-gray-500 font-medium mt-1">Lượt Thích Tổng</div>
+                </div>
+                <!-- Stat Card 4 -->
+                <div class="glass-panel p-6 rounded-2xl text-center shadow-sm hover:shadow-md transition">
+                    <i class="fa-solid fa-eye text-3xl text-brand-darkPink mb-2"></i>
+                    <div class="text-2xl sm:text-3xl font-bold text-brand-darkPink">12%</div>
+                    <div class="text-xs text-gray-500 font-medium mt-1">Tỷ Lệ Tương Tác (ER)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RATE CARD SECTION -->
+        <section id="ratecard" class="py-12 border-t border-brand-pink/20">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-brand-darkPink uppercase tracking-wide">Bảng Giá Dịch Vụ (Rate Card)</h2>
+                <p class="text-sm text-gray-600 mt-1">Gói hợp tác truyền thông & sáng tạo nội dung</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Package 1 -->
+                <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between hover:border-brand-pink transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-brand-pink/20 text-brand-darkPink px-3 py-1 rounded-full">TIKTOK VIDEO</span>
+                            <i class="fa-brands fa-tiktok text-xl text-gray-700"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Review / First Impression</h3>
+                        <p class="text-xs text-gray-500 mt-1 mb-4">1 Video ngắn 60s đăng TikTok + Cap tag thương hiệu</p>
+                        <div class="text-3xl font-serif font-bold text-brand-darkPink my-4">
+                            8.000.000 <span class="text-xs font-sans text-gray-500 font-normal">VNĐ</span>
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> Video độ phân giải 4K</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> Giữ clip vĩnh viễn trên kênh</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> Gắn link Bio 7 ngày</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-2.5 text-center text-xs font-bold text-brand-darkPink border border-brand-darkPink rounded-xl hover:bg-brand-darkPink hover:text-white transition">ĐẶT GÓI NÀY</a>
+                </div>
+
+                <!-- Package 2 (Best Seller) -->
+                <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between border-2 border-brand-pink relative shadow-lg transform md:-translate-y-2 bg-white/90">
+                    <div class="absolute -top-3 right-6 bg-brand-darkPink text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-brand-pink text-white px-3 py-1 rounded-full">COMBO DUAL-PLATFORM</span>
+                            <i class="fa-solid fa-star text-amber-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">TikTok + Instagram Reel</h3>
+                        <p class="text-xs text-gray-500 mt-1 mb-4">Phủ sóng đa kênh tối ưu lượt tiếp cận</p>
+                        <div class="text-3xl font-serif font-bold text-brand-darkPink my-4">
+                            12.500.000 <span class="text-xs font-sans text-gray-500 font-normal">VNĐ</span>
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> 1 Video TikTok + 1 IG Reel</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> 1 Set hình ảnh đẹp đăng IG Story</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> Quyền sử dụng video chạy Ads (30 ngày)</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-2.5 text-center text-xs font-bold text-white bg-brand-darkPink rounded-xl hover:bg-brand-pink transition shadow">ĐẶT GÓI NÀY</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="glass-panel p-6 rounded-3xl flex flex-col justify-between hover:border-brand-pink transition duration-300">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-brand-pink/20 text-brand-darkPink px-3 py-1 rounded-full">EVENT & LIVESTREAM</span>
+                            <i class="fa-solid fa-camera text-gray-700"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Dự Sự Kiện / Livestream</h3>
+                        <p class="text-xs text-gray-500 mt-1 mb-4">Tham dự event ra mắt sản phẩm hoặc chốt đơn livestream</p>
+                        <div class="text-3xl font-serif font-bold text-brand-darkPink my-4">
+                            Liên Hệ <span class="text-xs font-sans text-gray-500 font-normal">báo giá</span>
+                        </div>
+                        <ul class="text-xs text-gray-600 space-y-2 mb-6">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> Check-in chụp ảnh sự kiện</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> Up Story live ngay tại chỗ</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-600"></i> Livestream trò chuyện cùng Brand</li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="w-full py-2.5 text-center text-xs font-bold text-brand-darkPink border border-brand-darkPink rounded-xl hover:bg-brand-darkPink hover:text-white transition">THỎA THUẬN</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="py-12 border-t border-brand-pink/20">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-brand-darkPink">Hình Ảnh / Dự Án Đã Làm</h2>
+                <p class="text-sm text-gray-600 mt-1">Các thương hiệu đã đồng hành: Laneige, Innisfree, M.O.I, L'Oreal...</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="relative group rounded-2xl overflow-hidden shadow-md aspect-square">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600" alt="Portfolio 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-brand-darkPink/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-sm font-semibold">
+                        Skincare Review Campaign
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden shadow-md aspect-square">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&q=80&w=600" alt="Portfolio 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-brand-darkPink/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-sm font-semibold">
+                        Lipstick Swatch & Concept
+                    </div>
+                </div>
+                <div class="relative group rounded-2xl overflow-hidden shadow-md aspect-square">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=600" alt="Portfolio 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-brand-darkPink/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-sm font-semibold">
+                        Event Brand Launch
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-12 border-t border-brand-pink/20">
+            <div class="max-w-2xl mx-auto glass-panel p-8 rounded-3xl shadow-xl">
+                <div class="text-center mb-6">
+                    <h2 class="text-2xl font-serif font-bold text-brand-darkPink">Liên Hệ Hợp Tác</h2>
+                    <p class="text-xs text-gray-600 mt-1">Gửi thông tin cho Lan để nhận booking tư vấn nhanh nhất</p>
+                </div>
+
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã gửi thông tin! Kiều Lan sẽ liên hệ lại sớm.');">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Tên Nhãn Hàng / Booking Manager</label>
+                        <input type="text" placeholder="Ví dụ: L'Oreal Paris" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink bg-white/70 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Email / Zalo Liên Hệ</label>
+                        <input type="text" placeholder="nguyena@gmail.com hoặc 090xxx" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink bg-white/70 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Nội dung công việc</label>
+                        <textarea rows="3" placeholder="Mô tả chiến dịch, sản phẩm và thời gian dự kiến..." class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pink bg-white/70 text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-brand-darkPink hover:bg-brand-pink text-white font-bold rounded-xl shadow-lg transition duration-300">
+                        GỬI YÊU CẦU HỢP TÁC
+                    </button>
+                </form>
+
+                <div class="mt-8 pt-6 border-t border-gray-200 text-center text-xs text-gray-500 space-y-1">
+                    <p>📧 Email: booking.kieulanbeauty@gmail.com</p>
+                    <p>📱 Zalo/Hotline: 0988.xxx.xxx</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="mt-12 text-center text-xs text-gray-500 pt-6">
+            © 2026 KIỀU LAN BEAUTY. All rights reserved. Powered by GitHub Pages.
+        </footer>
+
+    </main>
+
+</body>
+</html>
